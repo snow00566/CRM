@@ -18,7 +18,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId><!--web启动器（Tomcat）：springmvc不需要配置web.xml,只需要写controller即可-->
         </dependency>
-        <dependency><!--mybatis启动器-->
+        <dependency><!--引入druid连接池依赖-->
+            <groupId>com.github.drtrang</groupId>
+            <artifactId>druid-spring-boot2-starter</artifactId>
+            <version>1.1.10.2</version>
+        </dependency>
+        <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>2.1.1</version>
