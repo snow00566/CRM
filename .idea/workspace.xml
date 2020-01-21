@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bc06e5e-71d5-4723-ab09-7bc4727e6a60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/hospital/config/JdbcConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/hospital/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/hospital/po/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/hospital/po/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/hospital/po/Watch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/hospital/config/JdbcConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/hospital/config/JdbcConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,13 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1579430161732</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2020.1.20 17:38">
+      <created>1579513148864</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579513148864</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2020.14:02" />
     <MESSAGE value="2020.18:35" />
-    <option name="LAST_COMMIT_MESSAGE" value="2020.18:35" />
+    <MESSAGE value="2020.1.20 17:38" />
+    <option name="LAST_COMMIT_MESSAGE" value="2020.1.20 17:38" />
   </component>
   <component name="WindowStateProjectService">
     <state x="357" y="169" key="#Notifications" timestamp="1579413760394">
@@ -150,10 +152,10 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="453" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.1440.870@0.0.1440.870" timestamp="1579510084515" />
-    <state x="348" y="31" key="CommitChangelistDialog2" timestamp="1579430160272">
+    <state x="348" y="31" key="CommitChangelistDialog2" timestamp="1579513146607">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="348" y="31" key="CommitChangelistDialog2/0.0.1440.870@0.0.1440.870" timestamp="1579430160272" />
+    <state x="348" y="31" key="CommitChangelistDialog2/0.0.1440.870@0.0.1440.870" timestamp="1579513146607" />
     <state x="802" y="250" key="FileChooserDialogImpl" timestamp="1579412132799">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
@@ -186,14 +188,18 @@
       <screen x="0" y="0" width="1440" height="870" />
     </state>
     <state x="284" y="64" key="SettingsEditor/0.0.1440.870@0.0.1440.870" timestamp="1579429968707" />
-    <state x="357" y="176" key="Vcs.Push.Dialog.v2" timestamp="1579430176924">
+    <state x="357" y="176" key="Vcs.Push.Dialog.v2" timestamp="1579513175889">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="357" y="176" key="Vcs.Push.Dialog.v2/0.0.1440.870@0.0.1440.870" timestamp="1579430176924" />
-    <state x="448" y="271" key="com.intellij.ide.util.TipDialog" timestamp="1579480214837">
+    <state x="357" y="176" key="Vcs.Push.Dialog.v2/0.0.1440.870@0.0.1440.870" timestamp="1579513175889" />
+    <state x="465" y="303" key="com.intellij.ide.util.TipDialog" timestamp="1579577141316">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
-    <state x="448" y="271" key="com.intellij.ide.util.TipDialog/0.0.1440.870@0.0.1440.870" timestamp="1579480214837" />
+    <state x="465" y="303" key="com.intellij.ide.util.TipDialog/0.0.1440.870@0.0.1440.870" timestamp="1579577141316" />
+    <state x="379" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1579577744172">
+      <screen x="0" y="0" width="1440" height="870" />
+    </state>
+    <state x="379" y="83" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1440.870@0.0.1440.870" timestamp="1579577744172" />
     <state x="505" y="360" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579413458167">
       <screen x="0" y="0" width="1440" height="870" />
     </state>
