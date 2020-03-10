@@ -2,15 +2,16 @@ package cn.hospital.po;
 
 import java.io.Serializable;
 
-public class Watch implements Serializable {
+public class Staff implements Serializable {
     private String username;
     private String password;
+    private Integer identity;
 
-    public Watch() {
+    public Staff() {
         super();
     }
 
-    public Watch(String username, String password) {
+    public Staff(String username, String password) {
         super();
         this.username = username;
         this.password = password;
@@ -31,5 +32,4 @@ public class Watch implements Serializable {
     public void setPassword(String password) {
         this.password = password;
     }
-
 }

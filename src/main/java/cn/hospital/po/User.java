@@ -1,40 +1,53 @@
 package cn.hospital.po;
 
 import java.io.Serializable;
+import java.util.Arrays;
 import java.util.Date;
 
 public class User implements Serializable {
     private Integer id;
-    private String username;
+    private Integer sex;
+    private String name;
     private Integer age;
     private String emile;
-    private Integer diseases;
+    private String WhatsApp;
+    private Integer diseases;//病种 21个
     private String phone;
-    private Integer website;
-    private Integer status;
+    private Integer channels;//渠道 1推广;2免费
+    private String country;
+    private Integer website;//网站
     private Integer service;//客服
     private Integer watch;//值班人
-    private Integer day;//过期时间
-    private Date date;
-    private String remark;
+    private String[] record;//沟通记录
+    private Date commit;//提交时间
+    private Date visit;//回访时间
+    private Integer effective;//有效性。1无效、2待定、3需持续跟进、4高意向、5已来诊
+  private Integer star;//5个
 
     public User() {
         super();
     }
 
-    public User(Integer id, String username, Integer age, String emile, Integer diseases, String phone, Integer website, Integer status, Integer service, Integer watch, Integer day) {
+    public User(Integer id, Integer sex, String name, Integer age, String emile, String whatsApp, Integer diseases, String phone, Integer channels, String country, Integer website, Integer service, Integer watch, String[] record, Date commit, Date visit, Integer effective, Integer star) {
         super();
         this.id = id;
-        this.username = username;
+        this.sex = sex;
+        this.name = name;
         this.age = age;
         this.emile = emile;
+        WhatsApp = whatsApp;
         this.diseases = diseases;
         this.phone = phone;
+        this.channels = channels;
+        this.country = country;
         this.website = website;
-        this.status = status;
         this.service = service;
         this.watch = watch;
-        this.day = day;
+        this.record = record;
+        this.commit = commit;
+        this.visit = visit;
+        this.effective = effective;
+        this.star = star;
     }
 
     public Integer getId() {
@@ -45,12 +58,20 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getUsername() {
-        return username;
+    public Integer getSex() {
+        return sex;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getAge() {
@@ -69,6 +90,14 @@ public class User implements Serializable {
         this.emile = emile;
     }
 
+    public String getWhatsApp() {
+        return WhatsApp;
+    }
+
+    public void setWhatsApp(String whatsApp) {
+        WhatsApp = whatsApp;
+    }
+
     public Integer getDiseases() {
         return diseases;
     }
@@ -85,20 +114,28 @@ public class User implements Serializable {
         this.phone = phone;
     }
 
+    public Integer getChannels() {
+        return channels;
+    }
+
+    public void setChannels(Integer channels) {
+        this.channels = channels;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
     public Integer getWebsite() {
         return website;
     }
 
     public void setWebsite(Integer website) {
         this.website = website;
-    }
-
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
     }
 
     public Integer getService() {
@@ -117,30 +154,67 @@ public class User implements Serializable {
         this.watch = watch;
     }
 
-    public Integer getDay() {
-        return day;
+    public String[] getRecord() {
+        return record;
     }
 
-    public void setDay(Integer day) {
-        this.day = day;
+    public void setRecord(String[] record) {
+        this.record = record;
+    }
+
+    public Date getCommit() {
+        return commit;
+    }
+
+    public void setCommit(Date commit) {
+        this.commit = commit;
+    }
+
+    public Date getVisit() {
+        return visit;
+    }
+
+    public void setVisit(Date visit) {
+        this.visit = visit;
+    }
+
+    public Integer getEffective() {
+        return effective;
+    }
+
+    public void setEffective(Integer effective) {
+        this.effective = effective;
+    }
+
+    public Integer getStar() {
+        return star;
+    }
+
+    public void setStar(Integer star) {
+        this.star = star;
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", username='" + username + '\'' +
+                ", sex=" + sex +
+                ", name='" + name + '\'' +
                 ", age=" + age +
                 ", emile='" + emile + '\'' +
+                ", WhatsApp='" + WhatsApp + '\'' +
                 ", diseases=" + diseases +
                 ", phone='" + phone + '\'' +
+                ", channels=" + channels +
+                ", country='" + country + '\'' +
                 ", website=" + website +
-                ", status=" + status +
                 ", service=" + service +
                 ", watch=" + watch +
-                ", day=" + day +
-                ", date=" + date +
-                ", remark='" + remark + '\'' +
+                ", record=" + Arrays.toString(record) +
+                ", commit=" + commit +
+                ", visit=" + visit +
+                ", effective=" + effective +
+                ", star=" + star +
                 '}';
     }
 }
