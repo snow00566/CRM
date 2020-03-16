@@ -10,7 +10,7 @@ public class User implements Serializable {
     private String name;
     private Integer age;
     private String emile;
-    private String WhatsApp;
+    private String whatsApp;
     private Integer diseases;//病种 21个
     private String phone;
     private Integer channels;//渠道 1推广;2免费
@@ -28,14 +28,14 @@ public class User implements Serializable {
         super();
     }
 
-    public User(Integer id, Integer sex, String name, Integer age, String emile, String whatsApp, Integer diseases, String phone, Integer channels, String country, Integer website, Integer service, Integer watch, String[] record, Date commit, Date visit, Integer effective, Integer star) {
+    public User( Integer sex, String name, Integer age, String emile, String whatsApp, Integer diseases, String phone, Integer channels, String country, Integer website, Integer service, Integer watch, String[] record, Date commit, Date visit, Integer effective, Integer star) {
         super();
         this.id = id;
         this.sex = sex;
         this.name = name;
         this.age = age;
         this.emile = emile;
-        WhatsApp = whatsApp;
+        this.whatsApp = whatsApp;
         this.diseases = diseases;
         this.phone = phone;
         this.channels = channels;
@@ -91,11 +91,11 @@ public class User implements Serializable {
     }
 
     public String getWhatsApp() {
-        return WhatsApp;
+        return whatsApp;
     }
 
     public void setWhatsApp(String whatsApp) {
-        WhatsApp = whatsApp;
+        whatsApp = whatsApp;
     }
 
     public Integer getDiseases() {
@@ -202,7 +202,7 @@ public class User implements Serializable {
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 ", emile='" + emile + '\'' +
-                ", WhatsApp='" + WhatsApp + '\'' +
+                ", WhatsApp='" + whatsApp + '\'' +
                 ", diseases=" + diseases +
                 ", phone='" + phone + '\'' +
                 ", channels=" + channels +
